@@ -42,11 +42,13 @@ a {
     background-color: #222629;
     align-items: center;
     top: 0;
+    box-shadow: 0 11px 13px -9px rgba(0,0,0,.2);
 }
 
 .header p {
     display: flex;
     transition: color 0.3s;
+    
 }
 
 .header p:hover{
