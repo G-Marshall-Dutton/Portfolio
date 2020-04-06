@@ -26,6 +26,9 @@ a {
     text-decoration: none;
     color: inherit;
 }
+.material-icons:hover{
+    color: lightseagreen;
+}
 
 .header{
     display: flex;
@@ -37,6 +40,11 @@ a {
 
 .header p {
     display: flex;
+    transition: color 0.3s;
+}
+
+.header p:hover{
+    color: lightseagreen;
 }
 
 .frame-1 {
@@ -46,17 +54,26 @@ a {
     /* position: absolute; */
 }
 
+h1 {
+    text-align: center;
+}
+
 section {
-    border-bottom: 1px cornflowerblue solid;
+    /* border-bottom: 1px cornflowerblue solid; */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
+
+section:nth-child(even) {
+    background-color: #25282b;
+  }
+
 section h3 {
     align-self: center;
     padding: 20px;
-    border-bottom: lightblue 1px solid;
+    border-bottom: lightseagreen 1px solid;
 }
 
 .b {
@@ -68,13 +85,21 @@ section h3 {
 }
 
 .exp-container {
-    margin: 10px;
+    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px
+    padding: 20px;
+    background-color: lightseagreen;
+
+    transition: background-color 0.8s;
 }
+
+/* .exp-container:hover {
+    background-color: #d2fdff97;
+    color: #222629;
+} */
 
 .exp-container p {
     text-align: center;
@@ -83,4 +108,10 @@ section h3 {
 .exp-container h2 {
     padding: 10px;
     border-bottom: lightblue 1px solid;
+    text-align: center;
+}
+
+.project {
+    background-color: #222629;
+
 }
