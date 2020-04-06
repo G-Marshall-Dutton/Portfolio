@@ -1,12 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     min-height: 100vh;
     background-color: #222629;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    
+}
+
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+
+    padding: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-height: 40px;
+    padding: 10px;
+}
+
+.header p {
+    display: flex;
+}
+
+.frame-1 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* position: absolute; */
+}
+
+section {
+    border-bottom: 1px cornflowerblue solid;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+section h3 {
+    align-self: center;
+    padding: 20px;
+    border-bottom: lightblue 1px solid;
+}
+
+.b {
+    border: rgba(255, 255, 255, 0.139) 1px solid;
+}
+
+.bio {
+    text-align: center;
+}
+
+.exp-container {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px
+}
+
+.exp-container p {
+    text-align: center;
+}
+
+.exp-container h2 {
+    padding: 10px;
+    border-bottom: lightblue 1px solid;
 }
